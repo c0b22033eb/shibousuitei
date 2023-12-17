@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>死亡推定時刻</title>
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="app">
+        <h1>死亡推定時刻</h1>
+        <div id="death-estimate">
+            <p>推定死亡時刻: <span id="death-time">{{ death_time }}</span></p>
+        </div>
+        <div id="number"></div>
+        <h2 id="question"></h2>
+        <form id="questionnaire">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">計算</button>
+        <p>いくつかの質問に答えると、あなたの死亡時刻を割り出せます</p>
+        <p>ぜひ死亡時刻をあなたの人生設計に役立ててください</p>
+        <p>※このサイトはあくまで推定値です。正確な時刻はわかりません</p>    
+        </form>
+        <form id="sentakusi"></form>
+        <div id="submit"></div>
+    </div>
+    <script src="{% static 'JavaScript/jquery.min.js' %}"></script>
+    <script src="{% static 'JavaScript/myJS.js' %}"></script>
+</body>
+</html>

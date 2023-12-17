@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#death-estimate {
+    margin-bottom: 20px;
+}
+
+#questionnaire div {
+    margin-bottom: 10px;
+}
+
+#sentakusi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 要素を中央に寄せる */
+    gap: 20px;
+}
+
+#sentakusi {
+    display: flex;
+    flex-wrap: wrap; /* ボタンが折り返して表示されるようにする */
+}
